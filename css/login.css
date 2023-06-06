@@ -1,0 +1,50 @@
+body, html, *{
+    margin: 0;
+    padding: 0;
+    font-size: 105%;
+}
+
+#formCadastro{
+    display: block;
+}
+#formLogin{
+    display: none;
+}
+main{
+    width: 50%;
+    height: 5em;
+    margin: auto;
+}
+form div{
+    margin: 1.2em 0 1.2em 0;
+}
+form div > *{
+    width: 100%;
+}
+label{
+    margin: 0.5em 0 0.5em 0;
+}
+input{
+    padding: 0.3em;     
+    border: 0;
+    border-bottom: 2px solid black;
+}
+label{
+    display: block;
+}
+.areas{
+    width: 100%;
+}
+.areas > *{
+    width: 49%;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+.send{
+    text-align: center;
+}
+button{
+    width: 5em !important;
+    padding: 0.5em;
+}
