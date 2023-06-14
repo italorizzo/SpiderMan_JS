@@ -8,60 +8,58 @@
     <title>Cadastro - Spider Man</title>
 </head>
 <body>
-    <main>
+    <section>
         <div class="areas">
-            <span onclick="changed('cadast')">Cadastro</span>
-            <span onclick="changed('login')">Login</span>
+            <span id="cadastro" onclick="changed('cadast')">Cadastro</span>
+            <span id="login" onclick="changed('login')">Login</span>
         </div>
         <div id="formCadastro">
             <form action="">
-                <div>
-                    <label for="">Nome *</label>
-                    <input type="text" id="name" required>
+                <div class="inline_input">
+                    <input type="text" placeholder="Nome:" id="name" required>
+                    <input type="text" required placeholder="Nickname: " id="nickname">
                 </div>
                 <div>
-                    <label for="">E-Mail *</label>
-                    <input type="email"  required name="" id="email">
+                    <input type="email" placeholder="E-Mail:"  required name="" id="email">
+                    <div class="validarCadastro">
+                        <span>E-mail já foi cadastrado.</span>
+                        <button onclick="changed('login')">Faça login!</button>
+                    </div>
                 </div>
                 <div>
-                    <label for="">Nickname *</label>
-                    <input type="text" required id="nickname">
+                    <input type="text" name="" required id="date_birth" maxlength="10" minlength="10" pattern="\d{2}/\d{2}/\d{4}" placeholder="Data de nascimento:    dd/mm/aaaa">
                 </div>
-                <div>
-                    <label for="">Data de Nascimento *</label>
-                    <input type="date" name=""  required id="date_birth">
-                </div>
-                <div class="password">
-                    <label for="">Senha *</label>
-                    <input type="password" name="" minlength="8" required id="password">
-                </div>
-                <div class="confirmPassword">
-                    <label for="">Confirme a Senha *</label>
-                    <input type="password" name="" minlength="8" required id="confirmPassword">
+                <div class="inline_input">
+                    <input type="password" placeholder="Senha: " name="" minlength="8" required id="password">
+                    <input type="password" name="" placeholder="Confirme sua senha:" minlength="8" required id="confirmPassword">
                 </div>
                 <div class="send">
-                    <button onclick="() => {
-                        validatePassword()
-                    }">Entrar</button>
+                    <button class="enviar">Entrar</button>
                 </div>
             </form>
         </div>
         <div id="formLogin">
             <form action="">
+                <h1>Bem-vindo de volta!</h1>
                 <div>
-                    <label for="">E-Mail *</label>
-                    <input type="email"  required name="" id="email_log">
+                    <input type="email" placeholder="E-Mail:"  required name="" id="email-logs">
+                    <div class="validarLogin">
+                        <span>E-mail ainda não foi cadastrado.</span>
+                        <button onclick="changed('cadast')">Cadastre-se!</button>
+                    </div>
                 </div>
                 <div class="password">
-                    <label for="">Senha *</label>
-                    <input type="password" name=""  required id="password_log">
+                    <input type="password" placeholder="Senha: " name="" minlength="8" required id="password_log">
+                    <div class="validarLoginPassword">
+                        <span>Senha incorreta, tente novamente!</span>
+                    </div>
                 </div>
                 <div class="send">
-                    <button onclick="send('login')">Entrar</button>
+                    <button class="enviar">Entrar</button>
                 </div>
             </form>
         </div>
-    </main>
+    </section>
     <script src="./js/login.js"></script>
 </body>
 </html>
