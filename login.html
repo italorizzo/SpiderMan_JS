@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/login.css">
-    <title>Cadastro - Spider Man</title>
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <title>Entrar - Spider Man</title>
+    <meta name="description" content="Site voltado ao Spider Man">
 </head>
 <body>
     <section>
@@ -14,48 +16,48 @@
             <span id="login" onclick="changed('login')">Login</span>
         </div>
         <div id="formCadastro">
-            <form action="">
+            <form onsubmit="handleFormSubmit(event, 'cadastro')">
                 <div class="inline_input">
                     <input type="text" placeholder="Nome:" id="name" required>
-                    <input type="text" required placeholder="Nickname: " id="nickname">
+                    <input type="text" placeholder="Nickname:" id="nickname" required>
                 </div>
                 <div>
-                    <input type="email" placeholder="E-Mail:"  required name="" id="email">
+                    <input type="email" placeholder="E-Mail:" id="email" required>
                     <div class="validarCadastro">
                         <span>E-mail já foi cadastrado.</span>
                         <button onclick="changed('login')">Faça login!</button>
                     </div>
                 </div>
                 <div>
-                    <input type="text" name="" required id="date_birth" maxlength="10" minlength="10" pattern="\d{2}/\d{2}/\d{4}" placeholder="Data de nascimento:    dd/mm/aaaa">
+                    <input type="text" placeholder="Data de nascimento: dd/mm/aaaa" id="date_birth" required>
                 </div>
                 <div class="inline_input">
-                    <input type="password" placeholder="Senha: " name="" minlength="8" required id="password">
-                    <input type="password" name="" placeholder="Confirme sua senha:" minlength="8" required id="confirmPassword">
+                    <input type="password" placeholder="Senha:" id="password" minlength="8" required>
+                    <input type="password" placeholder="Confirme sua senha:" id="confirmPassword" minlength="8" required>
                 </div>
                 <div class="send">
-                    <button class="enviar">Entrar</button>
+                    <button type="submit" class="enviar">Entrar</button>
                 </div>
             </form>
         </div>
         <div id="formLogin">
-            <form action="">
+            <form onsubmit="handleFormSubmit(event, 'login')">
                 <h1>Bem-vindo de volta!</h1>
                 <div>
-                    <input type="email" placeholder="E-Mail:"  required name="" id="email-logs">
+                    <input type="email" placeholder="E-Mail:" id="email_logs" required>
                     <div class="validarLogin">
                         <span>E-mail ainda não foi cadastrado.</span>
                         <button onclick="changed('cadast')">Cadastre-se!</button>
                     </div>
                 </div>
                 <div class="password">
-                    <input type="password" placeholder="Senha: " name="" minlength="8" required id="password_log">
+                    <input type="password" onkeypress="" placeholder="Senha:" id="password_log" minlength="8" required>
                     <div class="validarLoginPassword">
                         <span>Senha incorreta, tente novamente!</span>
                     </div>
                 </div>
                 <div class="send">
-                    <button class="enviar">Entrar</button>
+                    <button type="submit" class="enviar">Entrar</button>
                 </div>
             </form>
         </div>

@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: Spider-Man;
+    src: url(./fonts/font__spider-man.otf);
+}
+@font-face{
+    font-family: titulos;
+    src: url(./fonts/font__efeito_titulos.otf);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    transition: all 0.2s;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "foot foot foot";
+
+    width: 100vw;
+    background-color:#020305;
+}
+html, body, *{
+    padding: 0;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+    width: 100%;
+}
+h1{
+    text-align: center;
+    margin-bottom: -0.3em;
+    font-family: titulos, Arial, Helvetica, sans-serif !important;
+    font-size: 17em;
+    -webkit-text-stroke-width: 0.1px;
+    letter-spacing: 15px;
+    -webkit-text-stroke-color: #FFFFFF;
+    text-shadow: 4px 4px 33px 0px #FFF;
+}
+.home__banner-inicial, .home__banner-jogo, .home__novidades, .home__hq{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.home__banner-jogo{
+    position: relative;
+    top: -2em;
+    z-index: 1;
+    background-image: url(../img/home/home__fundo-principal.png);
+    text-align: center;
+}
+.home__banner-jogo > img{
+    width: 70%;
+    margin: auto;
+}
+.home__novidades{
+    position: relative;
+    height: 80em;
+    top: -12em;
+    background-image: url(../img/home/home__efeito-fundo-novidades.png);
+}
+.home__novidades > *{
+    position: relative;
+    top: 15%;
+}
+::-webkit-scrollbar{
+    width: 0px;
+    height: 100%;
+}
+.scrollmenu{
+    position: relative;
+    margin: 15em 0 10em 0;
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.card{
+    position: relative;
+    height: 15em;
+    width: 23em;
+    margin: 10px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    border-style: solid;
+    background-size: cover;
+    border-width: 5px;
+    border-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,72,72,1) 35%, rgba(202,157,0,1) 100%);
+    border-image-slice: 1;
+}
+.card:nth-child(1){
+    margin-left: 40px;
+    background-image: url('../img/home/home__novidades1.png');
+}
+.card:nth-child(2){
+    background-image: url('../img/home/home__novidades2.png');
+}
+.card:nth-child(3){
+    background-image: url('../img/home/home__novidades3.png');
+}
+.card:nth-child(4){
+    background-image: url('../img/home/home__novidades4.png');
+}
+.card:nth-child(5){
+    background-image: url('../img/home/home__novidades5.png');
+}
+.card:nth-child(6){
+    background-image: url('../img/home/home__novidades6.png');
+}
+.card span{
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    bottom: 0;
+    color: white;
+    padding: 1.5em 1em 1.5em 1em;
+    font-weight: bold;
+    font-size: 100%;
+    background-color: rgb(0,0,0,78%);
+    width: 91%;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+}
+.home__hq{
+    position: relative;
+    top: -25em;
+    font-size: 70%;
+    margin-bottom: -40em;
+    background-image: url('../img/home/home__fundo-card.png');
+}
+.home__hq article{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.home__hq div{
+    text-align: center;
+}
+.home__hq img{
+    width: 100%;
+    object-fit: cover;
+}
+.modal{
+    position: relative;
+    background-image: url(../img/home/home__fundo-card.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 1);
+    width: 80%;
+    border-radius: 20px;
+    padding: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.modal div{
+    width: 100%;
+}
+.modal img{
+    width: 100%;
+}
+.modal h2{
+    font-weight: 400;
+    font-size: 180%;
+    margin-bottom: 24px;
+}
+.modal p{
+    display: inline-block;
+    font-size: 130%;
+    justify-content: justify;
+    text-align: left;
+}
+.modal #fechar{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    width: 18px;
+    background-color: #a9aeda;
+    padding: 8px;
+    border-radius: 40px;
+}
+.modal #fechar:hover{
+    background-color: #cc4b4b;
+    transition: background 0.2s ease;
+}
+#fundo {
+    position: fixed;
+    display: none;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.75);
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    position: relative;
+    grid-area: foot;
+}
+@media(min-width:1200px){
+    .modal{
+        width: 60%;
+    }
+}
+@media (max-width: 1200px) {
+    h1{
+        font-size: 11em;
+        letter-spacing: 5px;
+    }
+    .home__novidades{
+        top: -8em;
+        height: 50em;
+    }
+    .scrollmenu{
+        position: relative;
+        margin: 2em 0 2em 0;
+    }
+    .modal{
+        width: 80%;
+        display: block;
+        align-items: center;
+    }
+    .modal img{
+        width: 20%;
+    }
+    .modal h2{
+        font-size: 150%;
+    }
+    .modal p{
+        font-size: 100%;
+    }
+}
+@media (max-width: 850px) {
+    h1{
+        font-size: 8em;
+        letter-spacing: 5px;
+    }
+    .modal img{
+        width: 40%;
+    }
+    .card{
+        transform: scale(0.7);
+        margin: 0;
+    }
+    .home__banner-jogo > img{
+        width: 100%;
+        margin: auto;
+    }
+    .home__hq{
+        background-image: none;
+    }
+    .home__hq article{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .home__hq img{
+        width: 80%;
+    }
+    .home__hq{
+        margin-bottom: -30em;
+    }
+}
+@media (max-width: 630px) {
+    h1{
+        font-size: 5.5em;
+        letter-spacing: 5px;
+    }
+    .card:nth-child(1){
+        margin-left: -5px;
+    }
+    .home__novidades{
+        top: -8em;
+        height: 36em;
+    }
+    .card{
+        transform: scale(0.5);
+    }
+    .home__hq img{
+        width: 60%;
+    }
+    .home__hq{
+        margin-bottom: -20em;
+    }
+    .modal h2{
+        font-size: 120%;
+    }
+    .modal p{
+        font-size: 90%;
+    }
+}

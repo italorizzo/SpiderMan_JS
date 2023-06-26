@@ -1,0 +1,51 @@
+{
+    "card1": {
+        "id": "vida",
+        "titulo": "Homem Aranha: História de Vida",
+        "img": "../img/home/HQ1.png",
+        "descricao": "Em Amazing Fantasy 15, de 1962, Peter Parker, um garoto de 15 anos, é picado por uma aranha irradiada e se torna o Espetacular Homem-Aranha! Cinquenta e oito anos se passaram no mundo real desde então — o que aconteceria se o mesmo tempo passasse para Peter? Chip Zdarsky e Mark Bagley se unem para uma abordagem única — contar a história da vida inteira do Homem-Aranha, com todos os eventos-chave das décadas em que ele viveu. Da Guerra do Vietnã, passando pelas Guerras Secretas e a Guerra Civil dos super-heróis, chegando ao que pode ser a última missão de um idoso Cabeça de Teia. Prepare-se para ver Peter Parker passar por décadas de história — e descubra o que acontece a ele e às pessoas mais importantes de sua vida!"
+    },
+    "card2": {
+        "id": "miles",
+        "titulo": "Spider-Man: Miles Morales",
+        "img": "../img/home/HQ2.png",
+        "descricao": "Miles Morales está de volta à ação, com novas perspectivas e muitas responsabilidades! Um dos mais terríveis vilões do passado de Peter Parker está não apenas vivo e bem, mas também prestes a revirar a cidade de Nova York completamente! E enfrenta-lo pode se provar uma tarefa ainda mais difícil que o Homem-Aranha antecipa... E os problemas não passam por aí: Miles também vai ser obrigado a encarar novos vilões surgindo no horizonte, sua vida pessoal virada do avesso, e... uma namorada! Mas para além das dificuldades habituais de um relacionamento, ele pode vir a descobrir que Katie Bishop tem mais segredos do que demonstra! Entre revelações chocantes sobre o passado de sua família, uma projeção aterrorizante de futuro e uma batalha entre Ho mens-Aranha, será que Miles Morales vai conseguir encarar tudo que essa nova fase reserva para ele?"
+    },
+    "card3": {
+        "id": "amazing",
+        "titulo": "Amazing Fantasy - Spider Man",
+        "img": "../img/home/HQ3.png",
+        "descricao": "Um estudante de escola secundária tímido e modesto, Peter Parker prefere a companhia de seus professores com o de seus colegas de classe, que o chamam de 'a única flor da vida profissional de Midtown High'. Seus únicos parentes vivos, Tio Ben Tia May, pensam no mundo dele"
+    },
+    "card4": {
+        "id": "action",
+        "titulo": "Marvel Action Spider Man - Um novo Começo",
+        "img": "../img/home/HQ4.png",
+        "descricao": "Uma nova e espetacular era começa aqui! Leitores de todas as idades poderão vivenciar as novíssimas aventuras do Homem-Aranha e de seus incríveis amigos! Peter Parker já teve que lidar com vilões mortais e heróis lendários, mas a vida no Ensino Médio pode ser seu maior desafio até agora. Por sorte, ele vai ter uma ajudinha de seus amigos. Miles Morales e Gwen Stacy!"
+    },
+    "card5": {
+        "id": "spider-verse",
+        "titulo": "Spider-Man: Spider Verse",
+        "img": "../img/home/HQ5.png",
+        "descricao": "Os tais Herdeiros se alimentam da força vital dos Aranhas do Multiverso Marvel e tem como objetivo dizimar a espécie aracnídea do todos os universos conhecidos. Com isso, um grupo de Homems, Mulheres e outras espécies de Aranhas se juntam sob a liderança de Peter Parker do universo 616 e do Homem-Aranha Superior, Otto Octavius para combater esta nova ameaça."
+    },
+    "card6": {
+        "id": "espectacular",
+        "titulo": "O Espetacular Homem-Aranha",
+        "img": "../img/home/HQ6.png",
+        "descricao": "Peter Parker já teve dias melhores – depois de retornar a Nova York tendo passado um bom tempo distante, o lançador de teias encontrou dívidas, amigos ressentidos e distantes e uma Mary Jane já comprometida com outro, com uma família e uma vida que não tem espaço para ele. Enquanto isso, uma guerra está se anunciando no mundo do crime da cidade depois do dramático ataque do Rosa ao Lápide – que já está preparando sua retaliação juntando armas e procurando estabelecer sua dominância. Quais poderão ser as consequências desse conflito? Paralelamente, uma ameaça a Aranhas por todo o multiverso parece cada vez mais forte e consolidada: picadas de vespas têm envenenado e corrompido vários dos heróis em seus respectivos universos. Tudo indica que será necessário um esforço conjunto através da Grande Teia para enfrentar esse novo e misterioso inimigo."
+    },
+    "card7": {
+        "id": "prelúdio",
+        "titulo": "Espetacular Homem-Aranha: Prelúdio Para o Aranhaverso",
+        "img": "../img/home/HQ7.png",
+        "descricao": "A Garota-Aranha e o Aracnídeo de 1602 são atacados pelas forças misteriosas por trás do Aranhaverso! Enquanto isso, em 2099, o Homem-Aranha Superior continua a viver... mas como? E Otto vai levar a luta até o homem que vem deixando uma trilha de morte pelo multiverso! A estrada para o Aranhaverso começa aqui!"
+    },
+    "card8": {
+        "id": "prelúdio",
+        "titulo": "Espetacular Homem-Aranha",
+        "img": "../img/home/HQ8.png",
+        "descricao": "Depois de cair numa armadilha do Lápide e ser sequestrado, Peter Parker vai precisar não apenas escapar para salvar a própria vida – mas também para impedir que um massacre sanguinário assole as ruas de Nova York. A gangue do vilão, sob suas ordens, está preparada para abrir fogo e assassinar inocentes a torto e a direto para incriminar o Rosa em meio à perigosa guerra que está se delineando. Será que, mesmo com seus poderes de aranha, o lançador de teias vai ser capaz de enfrentar tantos inimigos ao mesmo tempo?"
+    }
+    
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/personagens.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <title>Personagens - Spider Man</title>
+    <meta name="description" content="Site voltado ao Spider Man">
+</head>
+<body>
+    <header id="header-deslogado">
+        <section class="sec-form">
+            <div class="header-pt1">
+                <a href="index.html"><img src="./img/header__logo.png" alt="Logo aranha Homem-aranha"></a>
+            </div>
+            <div class="header-pt1" >
+                <h5>SPIDER MAN</h5>
+            </div>
+        </section>
+        <section>
+            <ul>
+                <a href=""><li>Entretenimento</li></a>
+                <a href=""><li id="estou-aqui">Personagens</li></a>
+                <a href=""><li>Notícias</li></a>
+                <a href=""><li>Store</li></a>
+                <a href=""><li>Spider-Space</li></a>
+            </ul>
+            <button id="logar" onclick="openLogin()">Login / Cadastre-se</button>
+        </section>
+    </header>
+    <header class="header-logado" id="header-logado">
+      <section class="sec-form">
+          <div class="header-pt1">
+            <a href="index.html"><img src="./img/header__logo.png" alt="Logo aranha Homem-aranha"></a>
+          </div>
+          <div class="header-pt1" >
+              <h5>SPIDER MAN</h5>
+          </div>
+          <div class="header-pt1">
+              <img src="./img/entreterimento/personagens__ícone-de-perfil.png" alt="">
+          </div>
+      </section>
+      <section>
+          <ul>
+              <a href=""><li>Entretenimento</li></a>
+              <a href=""><li id="estou-aqui">Personagens</li></a>
+              <a href=""><li>Notícias</li></a>
+              <a href=""><li>Store</li></a>
+              <a href=""><li>Spider-Space</li></a>
+          </ul>
+      </section>
+      
+  </header>
+    <main >
+        <section>
+            <img src="./img/entreterimento/personagens__capa-personagem.png" alt="capa persoangens">
+        </section>
+        <section>
+            <div id="container-nav">
+                <a href="#filmes"><div>
+                    <img src="./img/entreterimento/personagens_icons-nav/filmes.png" alt="botão filmes">
+                    <h5>Filmes</h5>
+                </div></a>
+                <a href="#classicos"><div>
+                    <img src="./img/entreterimento/personagens_icons-nav/hqs.png" alt="botão classicos">
+                    <h5>Clássicos</h5>
+                </div></a>
+                <a href="#viloes"><div>
+                    <img src="./img/entreterimento/personagens_icons-nav/vilões.png" alt="botão viloes">
+                    <h5>Vilões</h5>
+                </div></a>
+                <a href="#desenhos"><div>
+                    <img src="./img/entreterimento/personagens_icons-nav/desenhos.png" alt="botão desenhos">
+                    <h5>Desenhos</h5>
+                </div></a>
+                <div>
+                    <input  id="Pesquisar-input" type="text" placeholder="Pesquisar" list="lista">
+                    <datalist id="lista">
+                        <option value="FRIENDLY NEIGHBORHOOD SPIDER-MAN">Filmes</option>
+                        <option value="THE AMAZING SPIDER-MAN">Filmes</option>
+                        <option value="SPIDER-MAN">Filmes</option>
+                        <option value="ARANHAVERSO">Filmes</option>
+                        <option value="Amazing fantasy">Classicos</option>
+                        <option value="The Amazing spider-man">Classicos</option>
+                        <option value="The amazing spider-man 2009">Desenhos</option>
+                        <option value="Homem aranha - 1967 a 2008">Desenhos</option>
+                        <option value="Vilões spider-man">Vilões</option>
+                    </datalist>
+                    <button id="button-pesquisar" >Pesquisar</button>
+                </div>
+            </div>
+            <h2 id="filmes">FILMES</h2>
+            <h3>FRIENDLY NEIGHBORHOOD SPIDER-MAN</h3>
+            <div class="scrollmenu">
+                <div class="imagens"><img src="./img/entreterimento/personagens__friendly-neighborhood/Pp1.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__friendly-neighborhood/mj1.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__friendly-neighborhood/mp1.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__friendly-neighborhood/Bp.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__friendly-neighborhood/jj.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__friendly-neighborhood/ho.png" alt=""></div>
+              </div>
+              <h3>THE AMAZING SPIDER-MAN</h3>
+              <div class="scrollmenu">
+                <div class="imagens"><img src="./img/entreterimento/personagens__the-amazing-spider-man/pp2.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__the-amazing-spider-man/gs2.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__the-amazing-spider-man/mp2.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__the-amazing-spider-man/bp2.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__the-amazing-spider-man/ho2.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__the-amazing-spider-man/no2.png" alt=""></div>
+              </div>
+              <h3>SPIDER-MAN</h3>
+              <div class="scrollmenu">
+                <div class="imagens"><img src="./img/entreterimento/personagens__spider-man/pp3.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__spider-man/mj3.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__spider-man/nl3.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__spider-man/mp3.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__spider-man/ft3.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__spider-man/bb3.png" alt=""></div>
+              </div>
+              <h3>ARANHAVERSO</h3>
+              <div class="scrollmenu">
+                <div class="imagens"><img src="./img/entreterimento/personagens__aranhaverso/mm4.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__aranhaverso/gs4.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__aranhaverso/pp4.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__aranhaverso/mo4.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__aranhaverso/hb4.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__aranhaverso/jd4.png" alt=""></div>
+              </div>
+              <h2 id="classicos">CLássicos</h2>
+            <h3>Amazing fantasy</h3>
+            <div class="scrollmenu">
+                <div class="imagens"><img src="./img/entreterimento/personagens__amazing_fantasy/pp5.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__amazing_fantasy/mj5.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__amazing_fantasy/mp5.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__amazing_fantasy/bp5.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__amazing_fantasy/gs5.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__amazing_fantasy/ho5.png" alt=""></div>
+              </div>
+              <h3>The Amazing spider-man</h3>
+              <div class="scrollmenu">
+                <div class="imagens"><img src="./img/entreterimento/personagens__the-amazing-spiderman/hq1.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__the-amazing-spiderman/hq2.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__the-amazing-spiderman/hq3.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__the-amazing-spiderman/hq4.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__the-amazing-spiderman/hq5.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__the-amazing-spiderman/hq6.png" alt=""></div>
+              </div>
+              <h2 id="desenhos">Desenhos</h2>
+            <h3>The amazing spider-man 2009</h3>
+            <div class="scrollmenu">
+                <div class="imagens"><img src="./img/entreterimento/personagens__the-amazing-2009/pp6.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__the-amazing-2009/mj6.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__the-amazing-2009/gs6.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__the-amazing-2009/ho6.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__the-amazing-2009/ft6.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__the-amazing-2009/gs6-1.png" alt=""></div>
+              </div>
+              <h3>Homem aranha - 1967 a 2008</h3>
+              <div class="scrollmenu">
+                <div class="imagens"><img src="./img/entreterimento/personagens__the-amazing-spider-man/pp2.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__the-amazing-spider-man/gs2.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__the-amazing-spider-man/mp2.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__the-amazing-spider-man/bp2.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__the-amazing-spider-man/ho2.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens__the-amazing-spider-man/no2.png" alt=""></div>
+              </div>
+              <h2 id="viloes">Vilões</h2>
+            <div class="scrollmenu">
+                <div class="imagens"><img src="./img/entreterimento/personagens_viloes/camaleão.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens_viloes/duende-verde.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens_viloes/duende-macabro.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens_viloes/areia.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens_viloes/electro.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens_viloes/escorpião.png" alt=""></div>
+              </div>
+              <br>
+              <div class="scrollmenu">
+                <div class="imagens"><img src="./img/entreterimento/personagens_viloes/kraven.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens_viloes/lagarto.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens_viloes/misterio.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens_viloes/morbius.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens_viloes/octopus.png" alt=""></div>
+                <div class="imagens"><img src="./img/entreterimento/personagens_viloes/rei-do-crime.png" alt=""></div>
+              </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div>
+                <h3>home</h3>
+                <a href="">Jogo</a>
+                <a href="">Novidades</a>
+                <a href="">Linha do Tempo</a>
+            </div>
+            <div>
+                <h3>conteúdos</h3>
+                <a href="">Aranhaverso</a>
+                <a href="">História</a>
+                <a href="">Personagens</a>
+            </div>
+            <div>
+                <h3>hq's e filmes</h3>
+                <a href="">Principais</a>
+                <a href="">Categorias</a>
+                <a href="">Homem Aranha nos Filmes</a>
+            </div>
+            <div>
+                <h3>jogos</h3>
+                <a href="">Lançamentos</a>
+                <a href="">Outros Jogos</a>
+                
+            </div>
+            <div>
+                <h3>entretenimento</h3>
+                <a href="">Quiz</a>
+                <a href="">Artigos</a>
+                
+            </div>
+            <div>
+                <h3>loja</h3>
+                <a href="">Produtos destaque</a>
+                <a href="">Promoções</a>
+                
+            </div>
+            <div>
+                <h3>Spider-Space</h3>
+                <a href="">Perfil</a>
+                <a href="">Destaques</a>
+                
+            </div>
+
+        </section>
+    </footer>
+
+    <script src="./js/personagens.js"></script>
+    <script src="./js/checkin.js"></script>
+</body>
+
+</html>
