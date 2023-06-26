@@ -73,6 +73,7 @@ function handleCadastro(form) {
     localStorage.setItem('nickname', JSON.stringify(nicknameArray))
     localStorage.setItem('date_birth', JSON.stringify(nascimentoArray))
     localStorage.setItem('password', JSON.stringify(passwordArray))
+    localStorage.setItem('loggedInEmail', email)
 
     window.location.href = '../index.html'
   }

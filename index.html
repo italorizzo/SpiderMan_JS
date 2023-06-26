@@ -5,9 +5,171 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
     <title>Spider Man</title>
+    <meta name="description" content="Site voltado ao Spider Man">
 </head>
 <body>
+    <header id="header-deslogado">
+        <section class="sec-form">
+            <div class="header-pt1">
+                <a href="index.html"><img src="./img/header__logo.png" alt="Logo aranha Homem-aranha"></a>
+            </div>
+            <div class="header-pt1" >
+                <h5>SPIDER MAN</h5>
+            </div>
+        </section>
+        <section>
+            <ul>
+                <a href=""><li>Entretenimento</li></a>
+                <a href="personagens.html"><li>Personagens</li></a>
+                <a href=""><li>Notícias</li></a>
+                <a href=""><li>Store</li></a>
+                <a href=""><li>Spider-Space</li></a>
+            </ul>
+            <button id="logar" onclick="openLogin()">Login / Cadastre-se</button>
+        </section>
+    </header>
+    <header class="header-logado" id="header-logado">
+      <section class="sec-form">
+          <div class="header-pt1">
+            <a href="index.html"><img src="./img/header__logo.png" alt="Logo aranha Homem-aranha"></a>
+          </div>
+          <div class="header-pt1" >
+              <h5>SPIDER MAN</h5>
+          </div>
+          <div class="header-pt1">
+              <img src="./img/entreterimento/personagens__ícone-de-perfil.png" alt="">
+
+          </div>
+      </section>
+      <section>
+          <ul>
+              <a href=""><li>Entretenimento</li></a>
+              <a href="personagens.html"><li>Personagens</li></a>
+              <a href=""><li>Notícias</li></a>
+              <a href=""><li>Store</li></a>
+              <a href=""><li>Spider-Space</li></a>
+              <li>Como vai, Ítalo?</li>
+          </ul>
+      </section>
+      
+  </header>
+    <main>
+        <img class="home__banner-inicial" src="img/home/home__banner-inicial.png" alt="Dobra1">
+        <section class="home__banner-jogo">
+            <img src="img/home/home__banner-jogo.png" alt="Miles Morales Ps">
+        </section>
+
+        <section class="home__novidades">
+            <h1>Novidades</h1>
+
+            <div class="scrollmenu">
+                <div class="card" >
+                    <span>Homem-Aranha: novo curta <br> aborda saúde mental de Miles Morales</span>
+                </div>
+
+                <div class="card">
+                    <span>Tom Holland está 'animado' com roteiro <br> de Homem-Aranha 4</span>
+                </div>
+
+                <div class="card">
+                    <span>Marvel's Spider-Man 2: Data de <br> lançamento, gameplay e mais</span>
+                </div>
+
+                <div class="card">
+                    <span>Homem-Aranha 4 deve estrear <br> somente em 2024</span>
+                </div>
+
+                <div class="card">
+                    <span>Homem-Aranha atualiza um poder <br> que o deixa com o “dilema do Superman”</span>
+                </div>
+
+                <div class="card">
+                    <span>Aranhaverso 3 terá versões alternativas <br> de Gwen Stacy, diz produtor</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="home__hq">
+            <h1>Histórias em Quadrinhos</h1>
+            
+            <article id="article1">
+                <div><img onclick="openModal('fundo'); exibir('card1')" src="./img/home/HQ1.png" alt="hq1" class="hqs" id="card1"></div>
+                <div><img onclick="openModal('fundo'); exibir('card2')" src="./img/home/HQ2.png" alt="hq2" class="hqs" id="card2"></div>
+                <div><img onclick="openModal('fundo'); exibir('card3')" src="./img/home/HQ3.png" alt="hq3" class="hqs" id="card3"></div>
+                <div><img onclick="openModal('fundo'); exibir('card4')" src="./img/home/HQ4.png" alt="hq4" class="hqs" id="card4"></div>
+            </article>
+            <article id="article2">
+                <div><img onclick="openModal('fundo'); exibir('card5')" src="./img/home/HQ5.png" alt="hq1"></div>
+                <div><img onclick="openModal('fundo'); exibir('card6')" src="./img/home/HQ6.png" alt="hq2"></div>
+                <div><img onclick="openModal('fundo'); exibir('card7')" src="./img/home/HQ7.png" alt="hq3"></div>
+                <div><img onclick="openModal('fundo'); exibir('card8')" src="./img/home/HQ8.png" alt="hq4"></div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <div>
+                <h3>home</h3>
+                <a href="">Jogo</a>
+                <a href="">Novidades</a>
+                <a href="">Linha do Tempo</a>
+            </div>
+            <div>
+                <h3>conteúdos</h3>
+                <a href="">Aranhaverso</a>
+                <a href="">História</a>
+                <a href="">Personagens</a>
+            </div>
+            <div>
+                <h3>hq's e filmes</h3>
+                <a href="">Principais</a>
+                <a href="">Categorias</a>
+                <a href="">Homem Aranha nos Filmes</a>
+            </div>
+            <div>
+                <h3>jogos</h3>
+                <a href="">Lançamentos</a>
+                <a href="">Outros Jogos</a>
+                
+            </div>
+            <div>
+                <h3>entretenimento</h3>
+                <a href="">Quiz</a>
+                <a href="">Artigos</a>
+                
+            </div>
+            <div>
+                <h3>loja</h3>
+                <a href="">Produtos destaque</a>
+                <a href="">Promoções</a>
+                
+            </div>
+            <div>
+                <h3>Spider-Space</h3>
+                <a href="">Perfil</a>
+                <a href="">Destaques</a>
+                
+            </div>
+
+        </section>
+    </footer>
+
+    <div id="fundo">
+        <div class="modal">
+            <img id="fechar" src="./img/home/botao-fechar.png" alt="fechar" onclick="closeModal('fundo')">
+            <div><img src="./img/home/HQ1.png" alt="capa da HQ" id="ilustration"></div>
+            <div>
+                <h2 id="titulo"></h2>
+                <p id="descricao"></p>
+            </div>
+        </div>
+    </div>
     <script src="./js/main.js"></script>
+    <script src="./js/checkin.js"></script>
 </body>
 </html>

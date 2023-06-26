@@ -1,7 +1,5 @@
-
-
 body {
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../img/background_login.svg);
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../img/login/background_login.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -119,7 +117,7 @@ h1 {
         position: relative;
         left: 0;
         right: 0;
-        width: 90%;
+        width: 75%;
         margin: auto;
         border-radius: 1em;
         padding: 1em;
