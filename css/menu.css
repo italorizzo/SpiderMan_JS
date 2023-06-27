@@ -3,6 +3,39 @@ a {
     color: #ffff;
 }
 
+.logado{
+    font-size: 120%;
+    position: fixed;
+    display: none;
+    padding: 30px;
+    font-weight: bold;
+    color: white;
+    right: 20%;
+    top: calc(50% - 6em);
+    width: 60%;
+    line-height: 300%;
+    height: 12em;
+    box-shadow: 4px 4px 60px white;
+    border-radius: 10px;
+    z-index: 2;
+    background-color: #4A0000;
+}
+.logado div{
+    display: inline-block;
+    vertical-align: middle;
+}
+.logado div:nth-child(1){
+    width:15%;
+}
+.logado div:nth-child(2){
+    margin-left: 5em;
+}
+.logado img{
+    width: 100%;
+}
+.logado span{
+    font-weight: lighter;
+}
 
 button {
     border: none;
@@ -14,7 +47,7 @@ input {
 }
 
 header {
-    z-index: 5;
+    z-index: 3;
     font-family: 'Poppins', sans-serif;
     width: 100%;
     position: fixed;
@@ -46,7 +79,7 @@ header img {
     justify-content: center;
     place-items: center;
 }
-.sec-form div:nth-child(2) h5{
+.sec-form div:nth-child(2) span{
     text-align: center;
     color: rgba(255, 255, 255, 0.20);
     font-size: 18px;
@@ -108,7 +141,11 @@ header button {
     margin-left: 40px;
 }
 .header-logado section:last-child {
-    left: 300px;
+    left: 15%;
+}
+
+header ul li:last-child {
+    margin-left: 10px;
 }
 
 @media (max-width: 820px){
@@ -141,21 +178,36 @@ header button {
         top: 70px;
         left: 115px;
     }
-    .header-logado section:last-child {
-        left: 200px;
+    .header-logado div:last-child {
+        height: 54px;
+        border-radius: 0 0 0 0;
     }
-    
+    .header-logado div:last-child {
+        height: 54px;
+        border-radius: 0 0 0 0;
+    }
+    .header-logado div:last-child img{
+        margin-top: 0;
+        margin-left: 20px;
+    }
 }
 
 @media (max-width: 500px){
     .sec-form div:first-child {
-        display: none;
-    }
+        display: block;
+        height: 54px;
+        border-radius: 0 0 0 0;
+        padding: 0;
+    } 
+    .sec-form div:first-child  img{
+        width: 50px ;
+    } 
     header section:nth-child(2) {
         left: 10px;
+        
     }
     header section:nth-child(2) ul {
-        width: 300px;
+        width: 80%;
         font-size: 10px;
     }
     header section:nth-child(2) button:nth-child(2) {    
@@ -170,75 +222,67 @@ header button {
         margin-left: 10px;
         font-size: 10px;
     }
-    .sec-form div:nth-child(2) h5 {
-        font-size: 14px;
-    }
-    .header-logado section:last-child {
-        left: 10px;
+
+    .sec-form div:nth-child(2) span {
+        font-size: 10px;
+        letter-spacing: 6px;
     }
     .header-logado section:last-child ul {
         width: 330px;
     }
-    .header-logado div:last-child {
-        height: 110px;
+    header section:last-child {
+        width: 95%;
+        display: block;
     }
-    .header-logado div:last-child img {
-        margin-top: 30px;
+    header section:last-child ul {
+        width: 95%;
     }
+    .header-logado section:last-child {
+        left: 0;
+    }
+    
+    
 }
 
 @media (max-width: 300px) {
-    .sec-form div:nth-child(2) {
-        display: none;
+    header div:first-child {
+        position: absolute;
+        transform: translate(-50%, -50%); /* tcharaaaaaannnnn */
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        text-align: center;
     }
-    header section:nth-child(2) {
-        top: 10px;
-        left: 20px;
+    header section:last-child {
+        width: 90%;
         display: block;
     }
-    header section:nth-child(2) ul {
-        width: 270px;
+    header section:last-child ul {
+        width: 90%;
         font-size: 8px;
     }
-    header section:nth-child(2) button:nth-child(2) {    
-        width: 60px;
-        height: 20px;
-        margin-left: 0;
+    header section:nth-child(2) button:nth-child(2)  {
+        width: 150px;
+        height: 25px;
         font-size: 8px;
-    }
-    header section:nth-child(2) button:nth-child(3) {
-        width: 80px;
-        height: 20px;
-        margin-left: 5px;
-        font-size: 8px;
-    }
-    header ul li:last-child {
-        margin-right: 8px;
-    }
-    header .header-pt1 {
-        background: transparent;
-        backdrop-filter: none;
+        margin-top: 10px;
     }
     .header-logado div:last-child {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         position: absolute;
-        right: 5px;
-        top: 7px;
+        right: 20px;
+        top: 10px;
     }
+
     .header-logado div:last-child img{
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
     .header-logado div:last-child img {
         margin: 0;
     }
-    .header-logado section:last-child {
-        left: 5px;
-        top: 10px;
-    }
-    .header-logado section:last-child ul {
-        width: 230px;
-    }
+    
 
 }

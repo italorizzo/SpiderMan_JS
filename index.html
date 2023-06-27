@@ -18,16 +18,16 @@
                 <a href="index.html"><img src="./img/header__logo.png" alt="Logo aranha Homem-aranha"></a>
             </div>
             <div class="header-pt1" >
-                <h5>SPIDER MAN</h5>
+                <span>SPIDER MAN</span>
             </div>
         </section>
         <section>
             <ul>
-                <a href=""><li>Entretenimento</li></a>
-                <a href="personagens.html"><li>Personagens</li></a>
-                <a href=""><li>Notícias</li></a>
-                <a href=""><li>Store</li></a>
-                <a href=""><li>Spider-Space</li></a>
+                <li>Entretenimento</li></a>
+                <li><a href="personagens.html">Personagens</a></li>
+                <li>Notícias</li></a>
+                <li>Store</li></a>
+                <li>Spider-Space</li></a>
             </ul>
             <button id="logar" onclick="openLogin()">Login / Cadastre-se</button>
         </section>
@@ -38,21 +38,20 @@
             <a href="index.html"><img src="./img/header__logo.png" alt="Logo aranha Homem-aranha"></a>
           </div>
           <div class="header-pt1" >
-              <h5>SPIDER MAN</h5>
+              <span>SPIDER MAN</span>
           </div>
           <div class="header-pt1">
-              <img src="./img/entreterimento/personagens__ícone-de-perfil.png" alt="">
+              <img onclick="openPerfil()" src="./img/entreterimento/personagens__ícone-de-perfil.png" alt="">
 
           </div>
       </section>
       <section>
           <ul>
-              <a href=""><li>Entretenimento</li></a>
+              <li>Entretenimento</li>
               <a href="personagens.html"><li>Personagens</li></a>
-              <a href=""><li>Notícias</li></a>
-              <a href=""><li>Store</li></a>
-              <a href=""><li>Spider-Space</li></a>
-              <li>Como vai, Ítalo?</li>
+              <li>Notícias</li>
+              <li>Store</li>
+              <li>Spider-Space</li>
           </ul>
       </section>
       
@@ -115,44 +114,44 @@
         <section>
             <div>
                 <h3>home</h3>
-                <a href="">Jogo</a>
-                <a href="">Novidades</a>
-                <a href="">Linha do Tempo</a>
+                <a href="#">Jogo</a>
+                <a href="#">Novidades</a>
+                <a href="#">Linha do Tempo</a>
             </div>
             <div>
                 <h3>conteúdos</h3>
-                <a href="">Aranhaverso</a>
-                <a href="">História</a>
-                <a href="">Personagens</a>
+                <a href="#">Aranhaverso</a>
+                <a href="#">História</a>
+                <a href="#">Personagens</a>
             </div>
             <div>
                 <h3>hq's e filmes</h3>
-                <a href="">Principais</a>
-                <a href="">Categorias</a>
-                <a href="">Homem Aranha nos Filmes</a>
+                <a href="#">Principais</a>
+                <a href="#">Categorias</a>
+                <a href="#">Homem Aranha nos Filmes</a>
             </div>
             <div>
                 <h3>jogos</h3>
-                <a href="">Lançamentos</a>
-                <a href="">Outros Jogos</a>
+                <a href="#">Lançamentos</a>
+                <a href="#">Outros Jogos</a>
                 
             </div>
             <div>
                 <h3>entretenimento</h3>
-                <a href="">Quiz</a>
-                <a href="">Artigos</a>
+                <a href="#">Quiz</a>
+                <a href="#">Artigos</a>
                 
             </div>
             <div>
                 <h3>loja</h3>
-                <a href="">Produtos destaque</a>
-                <a href="">Promoções</a>
+                <a href="#">Produtos destaque</a>
+                <a href="#">Promoções</a>
                 
             </div>
             <div>
                 <h3>Spider-Space</h3>
-                <a href="">Perfil</a>
-                <a href="">Destaques</a>
+                <a href="#">Perfil</a>
+                <a href="#">Destaques</a>
                 
             </div>
 
@@ -169,7 +168,19 @@
             </div>
         </div>
     </div>
+    <div class="logado" id="perfil">
+        <div>
+            <img src="./img/entreterimento/personagens__ícone-de-perfil.png" alt="">
+        </div>
+        <div>
+            <p>Nome: <span id="nomeLocal"></span></p>
+            <p>Email: <span id="emailLocal"></span></p>
+            <p>Username: <span id="userLocal"></span></p>
+            <p>Data de Nascimento: <span id="dateLocal"></span></p>
+        </div>
+    </div>
     <script src="./js/main.js"></script>
     <script src="./js/checkin.js"></script>
+    <script src="./js/perfil.js"></script>
 </body>
 </html>
