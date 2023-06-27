@@ -14,11 +14,6 @@ body{
     align-items: center;
     min-height: 100vh;
     transition: all 0.2s;
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "foot foot foot";
-
     width: 100vw;
     background-color:#020305;
 }
@@ -27,11 +22,7 @@ html, body, *{
     font-family: Poppins, Arial, Helvetica, sans-serif;
     margin: 0;
 }
-header{
-    grid-area: header;
-}
 main{
-    grid-area: main;
     width: 100%;
 }
 h1{
@@ -151,6 +142,7 @@ h1{
     object-fit: cover;
 }
 .modal{
+    z-index: 6;
     position: relative;
     background-image: url(../img/home/home__fundo-card.png);
     background-size: cover;
@@ -206,7 +198,6 @@ h1{
 }
 footer{
     position: relative;
-    grid-area: foot;
 }
 @media(min-width:1200px){
     .modal{

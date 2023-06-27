@@ -17,7 +17,7 @@
                 <a href="index.html"><img src="./img/header__logo.png" alt="Logo aranha Homem-aranha"></a>
             </div>
             <div class="header-pt1" >
-                <h5>SPIDER MAN</h5>
+                <span>SPIDER MAN</span>
             </div>
         </section>
         <section>
@@ -37,10 +37,10 @@
             <a href="index.html"><img src="./img/header__logo.png" alt="Logo aranha Homem-aranha"></a>
           </div>
           <div class="header-pt1" >
-              <h5>SPIDER MAN</h5>
+              <span>SPIDER MAN</span>
           </div>
           <div class="header-pt1">
-              <img src="./img/entreterimento/personagens__ícone-de-perfil.png" alt="">
+              <img onclick="openPerfil()" src="./img/entreterimento/personagens__ícone-de-perfil.png" alt="">
           </div>
       </section>
       <section>
@@ -60,23 +60,25 @@
         </section>
         <section>
             <div id="container-nav">
-                <a href="#filmes"><div>
-                    <img src="./img/entreterimento/personagens_icons-nav/filmes.png" alt="botão filmes">
-                    <h5>Filmes</h5>
-                </div></a>
-                <a href="#classicos"><div>
-                    <img src="./img/entreterimento/personagens_icons-nav/hqs.png" alt="botão classicos">
-                    <h5>Clássicos</h5>
-                </div></a>
-                <a href="#viloes"><div>
-                    <img src="./img/entreterimento/personagens_icons-nav/vilões.png" alt="botão viloes">
-                    <h5>Vilões</h5>
-                </div></a>
-                <a href="#desenhos"><div>
-                    <img src="./img/entreterimento/personagens_icons-nav/desenhos.png" alt="botão desenhos">
-                    <h5>Desenhos</h5>
-                </div></a>
-                <div>
+                <div id="flex-categorias">
+                    <a href="#filmes"><div>
+                        <img src="./img/entreterimento/personagens_icons-nav/filmes.png" alt="botão filmes">
+                        <h5>Filmes</h5>
+                    </div></a>
+                    <a href="#classicos"><div>
+                        <img src="./img/entreterimento/personagens_icons-nav/hqs.png" alt="botão classicos">
+                        <h5>Clássicos</h5>
+                    </div></a>
+                    <a href="#viloes"><div>
+                        <img src="./img/entreterimento/personagens_icons-nav/vilões.png" alt="botão viloes">
+                        <h5>Vilões</h5>
+                    </div></a>
+                    <a href="#desenhos"><div>
+                        <img src="./img/entreterimento/personagens_icons-nav/desenhos.png" alt="botão desenhos">
+                        <h5>Desenhos</h5>
+                    </div></a>
+                </div>
+                <div id="pesquisas">
                     <input  id="Pesquisar-input" type="text" placeholder="Pesquisar" list="lista">
                     <datalist id="lista">
                         <option value="FRIENDLY NEIGHBORHOOD SPIDER-MAN">Filmes</option>
@@ -177,7 +179,7 @@
                 <div class="imagens"><img src="./img/entreterimento/personagens_viloes/escorpião.png" alt=""></div>
               </div>
               <br>
-              <div class="scrollmenu">
+              <div class="scrollmenu viloes">
                 <div class="imagens"><img src="./img/entreterimento/personagens_viloes/kraven.png" alt=""></div>
                 <div class="imagens"><img src="./img/entreterimento/personagens_viloes/lagarto.png" alt=""></div>
                 <div class="imagens"><img src="./img/entreterimento/personagens_viloes/misterio.png" alt=""></div>
@@ -234,9 +236,21 @@
 
         </section>
     </footer>
+    <div class="logado" id="perfil">
+        <div>
+            <img src="./img/entreterimento/personagens__ícone-de-perfil.png" alt="">
+        </div>
+        <div>
+            <p>Nome: <span id="nomeLocal"></span></p>
+            <p>Email: <span id="emailLocal"></span></p>
+            <p>Username: <span id="userLocal"></span></p>
+            <p>Data de Nascimento: <span id="dateLocal"></span></p>
+        </div>
+    </div>
 
     <script src="./js/personagens.js"></script>
     <script src="./js/checkin.js"></script>
+    <script src="./js/perfil.js"></script>
 </body>
 
 </html>
